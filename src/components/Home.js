@@ -68,6 +68,53 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <div className='content-container'>
+                    <div className='content'>
+                        <div className='content-title'>
+                            A safe, secure platform to store your medical records.
+                        </div>
+                        <div className='content-sub-title'>
+                            Healthier has verified doctor profiles, who then add your medical records, securing them within the blockchain.
+                        </div>
+                        <div className='cards-container'>
+                            <div className='cards'>
+                                <div className='card-container'>
+                                    <div className='card'>
+                                        <div className='card-image'></div>
+                                        <div className='card-title'>
+                                            Admins add the doctor's profile after verifying them
+                                        </div>
+                                        <div className='card-sub'>
+                                            We are the admin, searching for verified doctors around the world and adding them to our platform. We also verify the doctor's profile. This is done in order to ensure that the doctor is a real person and that he/she is a verified doctor and there is no discrepancy.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='card-container'>
+                                    <div className='card'>
+                                        <div className='card-image'></div>
+                                        <div className='card-title'>
+                                            Verified doctors create patient profiles
+                                        </div>
+                                        <div className='card-sub'>
+                                            Patients' information is added via doctor and the reports are also uploaded by the doctor. A unique QR code is generated for patient upon successful registration.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='card-container'>
+                                    <div className='card'>
+                                        <div className='card-image'></div>
+                                        <div className='card-title'>
+                                            Patients can view thier reports
+                                        </div>
+                                        <div className='card-sub'>
+                                            On the patients' dasboard, they can view their profile and their past reports. The patient can use the QR code when visiting a doctor. On scanning the QR, doctor can view all the past reports of the patient.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
