@@ -241,6 +241,13 @@
   width: 28%;
   height: 750px;
   border-radius: 30px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.home-container .other-content .content-container .content .cards-container .cards .card-container:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .home-container .other-content .content-container .content .cards-container .cards .card-container .card .card-image1 {
@@ -269,6 +276,11 @@
   font-size: 1.8rem;
   font-weight: 700;
   color: #041836;
+  cursor: context-menu;
+}
+
+.home-container .other-content .content-container .content .cards-container .cards .card-container .card .card-title:hover {
+  color: #005ac2;
 }
 
 .home-container .other-content .content-container .content .cards-container .cards .card-container .card .card-sub {
