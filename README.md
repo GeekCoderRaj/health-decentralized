@@ -1,6 +1,6 @@
 # health-decentralized
 
-![Home](./assets/home.png?raw=true "Home Page")
+![Home](./src/assets/home.png?raw=true "Home Page")
 
 ## View Here
 
