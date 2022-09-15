@@ -388,5 +388,8 @@
     width: 100%;
     height: auto;
   }
+  .home-container .footer-container .footer {
+    width: 94vw;
+  }
 }
 /*# sourceMappingURL=App.css.map */
