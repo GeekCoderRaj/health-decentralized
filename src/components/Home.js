@@ -1,7 +1,34 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { useMoralis } from 'react-moralis'
 
 const Home = () => {
+
+    // const { authenticate, isAuthenticated, user } = useMoralis()
+    // const nav = useNavigate()
+
+    // // useEffect(() => {
+    // //     if (isAuthenticated) {
+    // //         nav('/dashboard')
+    // //     }
+    // // }, [isAuthenticated, user, nav])
+
+    // const handleLogin = async () => {
+    //     if (!isAuthenticated) {
+    //         await authenticate({
+    //             signingMessage: 'Login using Moralis'
+    //         })
+    //             .then((user) => {
+    //                 console.log(user)
+    //                 console.log(user.get('ethAddress'))
+    //                 nav('/dashboard')
+    //             })
+    //             .catch((error) => {
+    //                 console.log('[-] Error encountered.\n', error)
+    //             })
+    //     }
+    // }
+
     return (
         <div className='home-container'>
             <div className='home'>
@@ -11,7 +38,10 @@ const Home = () => {
                             <div className='navbar-logo'>
                                 Healthier
                             </div>
-                            <div className='navbar-connect-btn'>
+                            <div
+                                className='navbar-connect-btn'
+                            // onClick={handleLogin}
+                            >
                                 Connect
                             </div>
                         </div>
@@ -30,7 +60,10 @@ const Home = () => {
                             <div className='title-sub'>
                                 A decentralized medical records storage platform that allows you to store your medical records safely and share them with your doctors and hospitals through QR code whenever required.
                             </div>
-                            <div className='connect-btn'>
+                            <div
+                                className='connect-btn'
+                            // onClick={handleLogin}
+                            >
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#005ac2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<polyline points="11 17 16 12 11 7"></polyline></svg>
                                 <div className='connect-btn-text'>
                                     Connect

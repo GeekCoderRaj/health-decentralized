@@ -8,6 +8,7 @@ import './styles/App.css';
 
 function App() {
   return (
+    // <Home />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/admin' element={<AdminPage />} />
