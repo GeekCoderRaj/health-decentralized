@@ -1,34 +1,7 @@
-import React, { useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { useMoralis } from 'react-moralis'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
-
-    // const { authenticate, isAuthenticated, user } = useMoralis()
-    // const nav = useNavigate()
-
-    // // useEffect(() => {
-    // //     if (isAuthenticated) {
-    // //         nav('/dashboard')
-    // //     }
-    // // }, [isAuthenticated, user, nav])
-
-    // const handleLogin = async () => {
-    //     if (!isAuthenticated) {
-    //         await authenticate({
-    //             signingMessage: 'Login using Moralis'
-    //         })
-    //             .then((user) => {
-    //                 console.log(user)
-    //                 console.log(user.get('ethAddress'))
-    //                 nav('/dashboard')
-    //             })
-    //             .catch((error) => {
-    //                 console.log('[-] Error encountered.\n', error)
-    //             })
-    //     }
-    // }
-
     return (
         <div className='home-container'>
             <div className='home'>
