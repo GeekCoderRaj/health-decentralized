@@ -123,7 +123,7 @@ const Home = () => {
             <div className='footer-container'>
                 <div className='footer'>
                     <div className='copy-text'>
-                        &copy; {new Date().getFullYear()} Healthier Co. | Significant Bits
+                        &copy; {new Date().getFullYear()} Healthier Co. | KnightWolves
                     </div>
                     <div className='github-btn'>
                         <a href='https://github.com/GeekCoderRaj/health-decentralized' target='_blank' rel='noreferrer'>
