@@ -87,14 +87,19 @@
                             border-bottom: 1px solid #fff
                             // border-radius: 10px
                             // background: #fff
+                            &:hover
+                                border-bottom: 1px solid #e4faff
                             a
                                 text-decoration: none
                                 color: #fff
                                 font-weight: 700
+                                &:hover
+                                    color: #e4faff
 
     .other-content
         width: 70vw
         margin: 0 auto
+        cursor: context-menu
         .resources-container
             padding: 3rem 0
             .resources
@@ -117,6 +122,8 @@
                         color: #94b0c9
                         font-size: 2rem
                         font-weight: 500
+                        &:hover
+                            color: #396993
                         // font-family: 'Pacifico', cursive
         .content-container
             .content
@@ -145,7 +152,7 @@
                             width: 28%
                             height: 750px
                             border-radius: 30px
-                            transition: all 0.1s ease
+                            transition: all 0.3s ease
                             &:hover
                                 transform: scale(1.05)
                             .card
@@ -196,3 +203,49 @@
                     font-weight: 500
                     &:hover
                         color: #005ac2
+
+@media screen and (max-width: 768px)
+    .home-container
+        .home
+            .home-content
+                width: 94vw
+                .navbar-container
+                .info-container
+                    padding: 2rem 0
+                    .info
+                        width: 100%
+                        .title-light
+                            font-size: 1rem
+                        .title
+                            font-size: 3rem
+                            padding: 0.5rem 0 1rem 0
+                        .title-sub
+                            font-size: 1rem
+        .other-content
+            width: 94vw
+            .resources-container
+                .resources
+                    .resources-title
+                        font-size: 1rem
+                    .resource-list
+                        width: 100%
+                        flex-wrap: wrap
+                        .resource
+                            font-size: 1.2rem
+            .content-container
+                .content
+                    .content-title
+                        font-size: 2rem
+                        width: 100%
+                    .content-sub-title
+                        font-size: 1.2rem
+                    .cards-container
+                        .cards
+                            flex-direction: column
+                            gap: 2rem
+                            .card-container
+                                width: 100%
+                                height: auto
+        .footer-container
+            .footer
+                width: 94vw

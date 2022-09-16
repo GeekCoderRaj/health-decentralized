@@ -147,15 +147,24 @@
   border-bottom: 1px solid #fff;
 }
 
+.home-container .home .home-content .info-container .info .title-patient .title-patient-btn:hover {
+  border-bottom: 1px solid #e4faff;
+}
+
 .home-container .home .home-content .info-container .info .title-patient .title-patient-btn a {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
 }
 
+.home-container .home .home-content .info-container .info .title-patient .title-patient-btn a:hover {
+  color: #e4faff;
+}
+
 .home-container .other-content {
   width: 70vw;
   margin: 0 auto;
+  cursor: context-menu;
 }
 
 .home-container .other-content .resources-container {
@@ -204,6 +213,10 @@
   font-weight: 500;
 }
 
+.home-container .other-content .resources-container .resources .resource-list .resource:hover {
+  color: #396993;
+}
+
 .home-container .other-content .content-container .content .content-title {
   font-size: 3rem;
   font-weight: 700;
@@ -241,8 +254,8 @@
   width: 28%;
   height: 750px;
   border-radius: 30px;
-  -webkit-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .home-container .other-content .content-container .content .cards-container .cards .card-container:hover {
@@ -321,5 +334,62 @@
 
 .home-container .footer-container .footer .github-btn a:hover {
   color: #005ac2;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container .home .home-content {
+    width: 94vw;
+  }
+  .home-container .home .home-content .info-container {
+    padding: 2rem 0;
+  }
+  .home-container .home .home-content .info-container .info {
+    width: 100%;
+  }
+  .home-container .home .home-content .info-container .info .title-light {
+    font-size: 1rem;
+  }
+  .home-container .home .home-content .info-container .info .title {
+    font-size: 3rem;
+    padding: 0.5rem 0 1rem 0;
+  }
+  .home-container .home .home-content .info-container .info .title-sub {
+    font-size: 1rem;
+  }
+  .home-container .other-content {
+    width: 94vw;
+  }
+  .home-container .other-content .resources-container .resources .resources-title {
+    font-size: 1rem;
+  }
+  .home-container .other-content .resources-container .resources .resource-list {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .home-container .other-content .resources-container .resources .resource-list .resource {
+    font-size: 1.2rem;
+  }
+  .home-container .other-content .content-container .content .content-title {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .home-container .other-content .content-container .content .content-sub-title {
+    font-size: 1.2rem;
+  }
+  .home-container .other-content .content-container .content .cards-container .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .home-container .other-content .content-container .content .cards-container .cards .card-container {
+    width: 100%;
+    height: auto;
+  }
+  .home-container .footer-container .footer {
+    width: 94vw;
+  }
 }
 /*# sourceMappingURL=App.css.map */
