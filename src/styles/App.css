@@ -249,37 +249,70 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.admin-page-container .admin-page-left .admin-page-left-nav a {
+  text-decoration: none;
+  color: #fff;
+}
 .admin-page-container .admin-page-left .admin-page-left-nav .left-nav-items {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.admin-page-container .admin-page-left .admin-page-left-nav .left-nav-items a {
+  text-decoration: none;
+  color: #5a7196;
+  font-weight: 500;
 }
 .admin-page-container .admin-page-left .admin-page-left-nav .left-nav-items .left-nav-logo {
   font-family: "Pacifico", cursive;
   font-size: 2rem;
   padding: 0 2rem;
   border-bottom: 1px solid rgba(0, 132, 255, 0.2392156863);
-  color: #5a7196;
 }
-.admin-page-container .admin-page-left .admin-page-left-nav .left-nav-items .left-nav-item {
+.admin-page-container .admin-page-left .admin-page-left-nav .left-nav-items .left-nav-item-active {
   padding: 1rem 2rem;
   background: #f0f8ff;
   border-radius: 10px;
   cursor: pointer;
 }
+.admin-page-container .admin-page-left .admin-page-left-nav .left-nav-items .left-nav-item-active:hover {
+  background: rgba(90, 113, 150, 0.2549019608);
+}
+.admin-page-container .admin-page-left .admin-page-left-nav .left-nav-items .left-nav-item {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.admin-page-container .admin-page-left .admin-page-left-nav .left-nav-items .left-nav-item a {
+  text-decoration: none;
+  color: #707a93;
+  font-weight: 500;
+}
 .admin-page-container .admin-page-left .admin-page-left-nav .left-nav-items .left-nav-item:hover {
-  background: #e4faff;
+  background: rgba(90, 113, 150, 0.2549019608);
 }
 .admin-page-container .admin-page-left .admin-page-left-nav .left-nav-logout {
   background: #005ac2;
   padding: 1rem 2rem;
   border-radius: 10px;
   cursor: pointer;
-  color: #fff;
   font-weight: 500;
 }
 .admin-page-container .admin-page-left .admin-page-left-nav .left-nav-logout:hover {
   background: #004a9e;
+}
+.admin-page-container .admin-page-right {
+  width: 86%;
+}
+.admin-page-container .admin-page-right .admin-page-right-nav {
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 132, 255, 0.2392156863);
+}
+.admin-page-container .admin-page-right .admin-page-right-nav .right-nav-items .right-nav-item {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #5a7196;
 }
 
 @media screen and (max-width: 768px) {
