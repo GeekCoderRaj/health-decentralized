@@ -204,6 +204,50 @@
                     &:hover
                         color: #005ac2
 
+.admin-page-container
+    height: 100vh
+    display: flex
+    // background: blue
+    .admin-page-left
+        padding: 1rem
+        background: #fff
+        border-right: 1px solid #0084ff3d
+        .admin-page-left-nav
+            height: 100%
+            // background: yellow
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            .left-nav-items
+                display: flex
+                flex-direction: column
+                gap: 1rem
+                .left-nav-logo
+                    font-family: 'Pacifico', cursive
+                    font-size: 2rem
+                    // font-weight: 400
+                    padding: 0 2rem
+                    border-bottom: 1px solid #0084ff3d
+                    color: #5a7196
+                    // margin-bottom: 1rem
+                .left-nav-item
+                    padding: 1rem 2rem
+                    background: #f0f8ff
+                    border-radius: 10px
+                    cursor: pointer
+                    &:hover
+                        background: #e4faff
+            .left-nav-logout
+                background: #005ac2
+                padding: 1rem 2rem
+                border-radius: 10px
+                cursor: pointer
+                color: #fff
+                font-weight: 500
+                &:hover
+                    background: #004a9e
+
+
 @media screen and (max-width: 768px)
     .home-container
         .home
