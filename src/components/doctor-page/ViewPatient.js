@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const DoctorPage = () => {
+const ViewPatient = () => {
     return (
         <div className='admin-page-container'>
             <div className='admin-page-left'>
@@ -10,13 +10,13 @@ const DoctorPage = () => {
                         <Link to='/' className='left-nav-logo'>
                             Healthier
                         </Link>
-                        <Link to='/doctor' className='left-nav-item-active'>
+                        <Link to='/doctor' className='left-nav-item'>
                             Home
                         </Link>
                         <Link to='/doctor/add-patient' className='left-nav-item'>
                             Add Patients
                         </Link>
-                        <Link to='/doctor/view-patient' className='left-nav-item'>
+                        <Link to='/doctor/view-patient' className='left-nav-item-active'>
                             View Patients
                         </Link>
                         <Link to='/doctor/appointments' className='left-nav-item'>
@@ -46,4 +46,4 @@ const DoctorPage = () => {
     )
 }
 
-export default DoctorPage
+export default ViewPatient
