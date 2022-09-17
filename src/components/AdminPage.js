@@ -37,6 +37,15 @@ const AdminPage = () => {
                     </div>
                 </div>
                 <div className='content-container'>
+                    <div className='content-view'>
+                        <div className='content-nav-container'>
+                            <div className='content-nav'>
+                                <div className='content-nav-item'>
+                                    Hi there 👋
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

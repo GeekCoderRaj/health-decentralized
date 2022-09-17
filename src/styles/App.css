@@ -473,6 +473,35 @@
 .admin-page-container .admin-page-right .content-view .doc-cards-container .doc-cards .doc-card-container .doc-card .doc-card-right .doc-right-bottom .doc-right-btn:hover {
   background: #004a9e;
 }
+.admin-page-container .admin-page-right .details-container .details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.admin-page-container .admin-page-right .details-container .details .details-header {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.admin-page-container .admin-page-right .details-container .details .details-box .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.admin-page-container .admin-page-right .details-container .details .details-box .detail .det-image {
+  width: 200px;
+  height: 200px;
+  background: #005ac2;
+  border-radius: 50%;
+}
+.admin-page-container .admin-page-right .details-container .details .details-box .detail .det {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 132, 255, 0.2392156863);
+}
 
 @media screen and (max-width: 768px) {
   .home-container .home .home-content {
