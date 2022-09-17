@@ -326,7 +326,8 @@
   align-items: center;
 }
 .admin-page-container .admin-page-right .content-container .content .form-container {
-  border: 1px solid #efefef;
+  border: 1px solid rgba(0, 132, 255, 0.2392156863);
+  background: #fff;
   border-radius: 10px;
   padding: 2rem;
 }
@@ -341,6 +342,7 @@
 }
 .admin-page-container .admin-page-right .content-container .content .form-container .form .form-fields .form-field {
   padding: 0.8rem 1.2rem;
+  border: 1px solid rgba(0, 132, 255, 0.2392156863);
   border-radius: 10px;
   background: #fff;
 }
@@ -353,6 +355,7 @@
 }
 .admin-page-container .admin-page-right .content-container .content .form-container .form .form-fields-add .form-field {
   padding: 0.8rem 1.2rem;
+  border: 1px solid rgba(0, 132, 255, 0.2392156863);
   border-radius: 10px;
   background: #fff;
 }
