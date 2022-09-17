@@ -502,6 +502,20 @@
   border-radius: 10px;
   border: 1px solid rgba(0, 132, 255, 0.2392156863);
 }
+.admin-page-container .admin-page-right .intro-box {
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  background: #57a5ff;
+  color: #fff;
+}
+.admin-page-container .admin-page-right .intro-box .intro .intro-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.admin-page-container .admin-page-right .intro-box .intro .intro-sub {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
 
 @media screen and (max-width: 768px) {
   .home-container .home .home-content {

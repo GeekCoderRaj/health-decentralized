@@ -34,6 +34,25 @@ const PatientPage = () => {
                     </div>
                 </div>
                 <div className='content-container'>
+                    <div className='content-view'>
+                        <div className='content-nav-container'>
+                            <div className='content-nav'>
+                                <div className='content-nav-item'>
+                                    Hi there 👋
+                                </div>
+                            </div>
+                        </div>
+                        <div className='intro-box'>
+                            <div className='intro'>
+                                <div className='intro-title'>
+                                    Welcome to your dashboard!
+                                </div>
+                                <div className='intro-sub'>
+                                    Here you can manage your account and check your reports. Check out the navigation bar on the left to get started.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

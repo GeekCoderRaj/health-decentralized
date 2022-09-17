@@ -45,6 +45,16 @@ const AdminPage = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className='intro-box'>
+                            <div className='intro'>
+                                <div className='intro-title'>
+                                    Welcome to your admin dashboard
+                                </div>
+                                <div className='intro-sub'>
+                                    Here you can manage your account and add doctors to the system. Check out the navigation bar on the left to get started.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
