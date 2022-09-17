@@ -1,7 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const ViewPatient = () => {
+    const nav = useNavigate()
+
     return (
         <div className='admin-page-container'>
             <div className='admin-page-left'>
@@ -74,7 +76,11 @@ const ViewPatient = () => {
                                                 </div>
                                             </div>
                                             <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
                                                     View
                                                 </div>
                                             </div>
@@ -96,7 +102,11 @@ const ViewPatient = () => {
                                                 </div>
                                             </div>
                                             <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
                                                     View
                                                 </div>
                                             </div>
@@ -118,75 +128,11 @@ const ViewPatient = () => {
                                                 </div>
                                             </div>
                                             <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
-                                                    View
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='doc-cards'>
-                                <div className='doc-card-container'>
-                                    <div className='doc-card'>
-                                        <div className='doc-card-left'>
-                                        </div>
-                                        <div className='doc-card-right'>
-                                            <div className='doc-right-top'>
-                                                <div className='doc-name'>
-                                                    Mr. John Doe
-                                                </div>
-                                                <div className='doc-spec'>Male, 20</div>
-                                                <div className='doc-hospital'>
-                                                    Wolf Street, Casablanca, SA
-                                                </div>
-                                            </div>
-                                            <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
-                                                    View
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='doc-card-container'>
-                                    <div className='doc-card'>
-                                        <div className='doc-card-left'>
-                                        </div>
-                                        <div className='doc-card-right'>
-                                            <div className='doc-right-top'>
-                                                <div className='doc-name'>
-                                                    Mr. John Doe
-                                                </div>
-                                                <div className='doc-spec'>Male, 20</div>
-                                                <div className='doc-hospital'>
-                                                    Wolf Street, Casablanca, SA
-                                                </div>
-                                            </div>
-                                            <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
-                                                    View
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='doc-card-container'>
-                                    <div className='doc-card'>
-                                        <div className='doc-card-left'>
-                                        </div>
-                                        <div className='doc-card-right'>
-                                            <div className='doc-right-top'>
-                                                <div className='doc-name'>
-                                                    Mr. John Doe
-                                                </div>
-                                                <div className='doc-spec'>Male, 20</div>
-                                                <div className='doc-hospital'>
-                                                    Wolf Street, Casablanca, SA
-                                                </div>
-                                            </div>
-                                            <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
                                                     View
                                                 </div>
                                             </div>
@@ -210,7 +156,11 @@ const ViewPatient = () => {
                                                 </div>
                                             </div>
                                             <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
                                                     View
                                                 </div>
                                             </div>
@@ -232,7 +182,11 @@ const ViewPatient = () => {
                                                 </div>
                                             </div>
                                             <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
                                                     View
                                                 </div>
                                             </div>
@@ -254,7 +208,11 @@ const ViewPatient = () => {
                                                 </div>
                                             </div>
                                             <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
                                                     View
                                                 </div>
                                             </div>
@@ -278,7 +236,11 @@ const ViewPatient = () => {
                                                 </div>
                                             </div>
                                             <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
                                                     View
                                                 </div>
                                             </div>
@@ -300,7 +262,11 @@ const ViewPatient = () => {
                                                 </div>
                                             </div>
                                             <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
                                                     View
                                                 </div>
                                             </div>
@@ -322,7 +288,91 @@ const ViewPatient = () => {
                                                 </div>
                                             </div>
                                             <div className='doc-right-bottom'>
-                                                <div className='doc-right-btn'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
+                                                    View
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='doc-cards'>
+                                <div className='doc-card-container'>
+                                    <div className='doc-card'>
+                                        <div className='doc-card-left'>
+                                        </div>
+                                        <div className='doc-card-right'>
+                                            <div className='doc-right-top'>
+                                                <div className='doc-name'>
+                                                    Mr. John Doe
+                                                </div>
+                                                <div className='doc-spec'>Male, 20</div>
+                                                <div className='doc-hospital'>
+                                                    Wolf Street, Casablanca, SA
+                                                </div>
+                                            </div>
+                                            <div className='doc-right-bottom'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
+                                                    View
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='doc-card-container'>
+                                    <div className='doc-card'>
+                                        <div className='doc-card-left'>
+                                        </div>
+                                        <div className='doc-card-right'>
+                                            <div className='doc-right-top'>
+                                                <div className='doc-name'>
+                                                    Mr. John Doe
+                                                </div>
+                                                <div className='doc-spec'>Male, 20</div>
+                                                <div className='doc-hospital'>
+                                                    Wolf Street, Casablanca, SA
+                                                </div>
+                                            </div>
+                                            <div className='doc-right-bottom'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
+                                                    View
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='doc-card-container'>
+                                    <div className='doc-card'>
+                                        <div className='doc-card-left'>
+                                        </div>
+                                        <div className='doc-card-right'>
+                                            <div className='doc-right-top'>
+                                                <div className='doc-name'>
+                                                    Mr. John Doe
+                                                </div>
+                                                <div className='doc-spec'>Male, 20</div>
+                                                <div className='doc-hospital'>
+                                                    Wolf Street, Casablanca, SA
+                                                </div>
+                                            </div>
+                                            <div className='doc-right-bottom'>
+                                                <div className='doc-right-btn'
+                                                    onClick={() => {
+                                                        nav('/doctor/patient-info')
+                                                    }}
+                                                >
                                                     View
                                                 </div>
                                             </div>
