@@ -352,6 +352,10 @@
                         font-size: 1.6rem
                         font-weight: 700
                         color: #5a7196
+                        span
+                            cursor: pointer
+                            &:hover
+                                color: #005ac2
                         .search-box
                             display: flex
                             align-items: center
@@ -454,6 +458,25 @@
                                     justify-content: space-between
                                     font-style: 1rem
                                     color: #5a7196
+            .patient-info-container
+                .patient-info
+                    display: flex
+                    flex-direction: column
+                    gap: 2rem
+                    .patient-info-top
+                        display: flex
+                        flex-direction: column
+                        gap: 1rem
+                        .info-top-card
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            .patient-info-card
+                                width: 30%
+                                padding: 1rem
+                                background: #fff
+                                border-radius: 10px
+                    .patient-info-bottom
 
         .details-container
             .details
