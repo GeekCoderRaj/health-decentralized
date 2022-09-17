@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const DoctorPage = () => {
+const Appointments = () => {
     return (
         <div className='admin-page-container'>
             <div className='admin-page-left'>
@@ -10,7 +10,7 @@ const DoctorPage = () => {
                         <Link to='/' className='left-nav-logo'>
                             Healthier
                         </Link>
-                        <Link to='/doctor' className='left-nav-item-active'>
+                        <Link to='/doctor' className='left-nav-item'>
                             Home
                         </Link>
                         <Link to='/doctor/add-patient' className='left-nav-item'>
@@ -19,7 +19,7 @@ const DoctorPage = () => {
                         <Link to='/doctor/view-patient' className='left-nav-item'>
                             View Patients
                         </Link>
-                        <Link to='/doctor/appointments' className='left-nav-item'>
+                        <Link to='/doctor/appointments' className='left-nav-item-active'>
                             Appointments
                         </Link>
                         <Link to='/doctor/account' className='left-nav-item'>
@@ -40,29 +40,10 @@ const DoctorPage = () => {
                     </div>
                 </div>
                 <div className='content-container'>
-                    <div className='content-view'>
-                        <div className='content-nav-container'>
-                            <div className='content-nav'>
-                                <div className='content-nav-item'>
-                                    Hi there 👋
-                                </div>
-                            </div>
-                        </div>
-                        <div className='intro-box'>
-                            <div className='intro'>
-                                <div className='intro-title'>
-                                    Welcome to your dashboard, Doc
-                                </div>
-                                <div className='intro-sub'>
-                                    Here you can manage your account and add patients, while also upload and check their reports. Check out the navigation bar on the left to get started.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     )
 }
 
-export default DoctorPage
+export default Appointments

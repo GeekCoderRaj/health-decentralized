@@ -45,11 +45,7 @@ const Home = () => {
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#005ac2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<polyline points="11 17 16 12 11 7"></polyline></svg>
                                 <div
-                                    className='connect-btn-text'
-                                    onClick={() => {
-                                        nav('/patient')
-                                    }}
-                                >
+                                    className='connect-btn-text'>
                                     Connect
                                 </div>
                             </div>
@@ -58,7 +54,7 @@ const Home = () => {
                                     Are you a patient?
                                 </div>
                                 <div className='title-patient-btn'>
-                                    <Link to='/patient-signup'>
+                                    <Link to='/patient'>
                                         Join here
                                     </Link>
                                 </div>
