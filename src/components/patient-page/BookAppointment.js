@@ -16,6 +16,9 @@ const BookAppointment = () => {
                         <Link to='/patient/view-doctor' className='left-nav-item-active'>
                             View Doctors
                         </Link>
+                        <Link to='/patient/reports' className='left-nav-item'>
+                            Reports
+                        </Link>
                         <Link to='/patient/account' className='left-nav-item'>
                             Account
                         </Link>

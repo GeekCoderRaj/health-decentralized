@@ -11,6 +11,7 @@ import DoctorPage from './components/DoctorPage';
 import Home from './components/Home';
 import BookAppointment from './components/patient-page/BookAppointment';
 import PatientAccount from './components/patient-page/PatientAccount';
+import Reports from './components/patient-page/Reports';
 import PatientPage from './components/PatientPage';
 import './styles/App.css';
 
@@ -29,6 +30,7 @@ function App() {
       <Route path='/doctor/appointments' element={<Appointments />} />
       <Route path='/doctor/account' element={<DoctorAccount />} />
       <Route path='/patient/view-doctor' element={<BookAppointment />} />
+      <Route path='/patient/reports' element={<Reports />} />
       <Route path='/patient/account' element={<PatientAccount />} />
     </Routes>
   );

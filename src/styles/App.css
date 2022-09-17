@@ -473,6 +473,46 @@
 .admin-page-container .admin-page-right .content-view .doc-cards-container .doc-cards .doc-card-container .doc-card .doc-card-right .doc-right-bottom .doc-right-btn:hover {
   background: #004a9e;
 }
+.admin-page-container .admin-page-right .content-view .rep-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: scroll;
+  height: 80vh;
+}
+.admin-page-container .admin-page-right .content-view .rep-cards-container .rep-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.admin-page-container .admin-page-right .content-view .rep-cards-container .rep-cards .rep-card-container {
+  border: 1px solid rgba(0, 132, 255, 0.2392156863);
+  background: #fff;
+  border-radius: 10px;
+  width: 18%;
+}
+.admin-page-container .admin-page-right .content-view .rep-cards-container .rep-cards .rep-card-container .rep-card .rep-card-top {
+  width: 100%;
+  height: 300px;
+  background: #005ac2;
+  border-radius: 10px 10px 0 0;
+}
+.admin-page-container .admin-page-right .content-view .rep-cards-container .rep-cards .rep-card-container .rep-card .rep-card-bottom {
+  padding: 1rem;
+}
+.admin-page-container .admin-page-right .content-view .rep-cards-container .rep-cards .rep-card-container .rep-card .rep-card-bottom .rep-card-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #5a7196;
+}
+.admin-page-container .admin-page-right .content-view .rep-cards-container .rep-cards .rep-card-container .rep-card .rep-card-bottom .rep-card-extra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: 1rem;
+  color: #5a7196;
+}
 .admin-page-container .admin-page-right .details-container .details {
   display: flex;
   flex-direction: column;

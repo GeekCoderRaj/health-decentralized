@@ -16,6 +16,9 @@ const PatientAccount = () => {
                         <Link to='/patient/view-doctor' className='left-nav-item'>
                             View Doctors
                         </Link>
+                        <Link to='/patient/reports' className='left-nav-item'>
+                            Reports
+                        </Link>
                         <Link to='/patient/account' className='left-nav-item-active'>
                             Account
                         </Link>
