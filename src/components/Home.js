@@ -1,9 +1,32 @@
-import React from 'react'
+import React , {useState }from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-
+import { ethers } from "ethers";
+import Web3Modal from "web3modal";
+import abi from "./homeAbi.json" 
 const Home = () => {
+    const [Admin, setAdmin] = useState(null);
+    const [walletAddress, setwalletAddress] = useState(null);
+    const address = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
     const nav = useNavigate()
-
+    const connect = async() =>{
+        console.log(abi)
+        if(window.ethereum)
+        {
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            const accounts = await provider.send("eth_requestAccounts", []);
+            const signer = provider.getSigner();
+            await signer.signMessage("Login to Healthier");
+            setwalletAddress(accounts[0]);
+            const Contract = new ethers.Contract( address , abi , signer );
+            setAdmin(await Contract.owner());
+            console.log(accounts[0]);
+            //console.log(await Contract.showDoctorProfile(walletAddress));
+        }
+        else
+        {
+            alert("Wallet not connected");
+        }
+    }
     return (
         <div className='home-container'>
             <div className='home'>
@@ -13,14 +36,14 @@ const Home = () => {
                             <div className='navbar-logo'>
                                 Healthier
                             </div>
-                            <div
+                            {Admin == walletAddress && Admin ? <div
                                 className='navbar-connect-btn'
                                 onClick={() => {
                                     nav('/admin')
                                 }}
                             >
                                 Administrator
-                            </div>
+                            </div>: null}
                         </div>
                     </div>
                     <div className='info-container'>
@@ -40,7 +63,7 @@ const Home = () => {
                             <div
                                 className='connect-btn'
                                 onClick={() => {
-                                    nav('/doctor')
+                                 connect();
                                 }}
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#005ac2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<polyline points="11 17 16 12 11 7"></polyline></svg>
